@@ -1,7 +1,7 @@
 class teamspeak::params {
     $init_file    = "teamspeak/init/${::osfamily}.init.erb"
     $systemd_file = 'teamspeak/systemd/teamspeak.erb'
-    $version      = '3.0.11.3'
+    $version      = '3.0.11.4'
     $arch         = $::architecture
 
     case $::osfamily {
