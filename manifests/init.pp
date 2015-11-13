@@ -55,6 +55,8 @@ class teamspeak (
   $service         = 'teamspeak',
 ) inherits ::teamspeak::params  {
 
+  include wget
+
   group { $group:
     ensure => present,
   }
